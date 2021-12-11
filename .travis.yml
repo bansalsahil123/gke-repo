@@ -11,7 +11,7 @@ before_install:
   - source $HOME/google-cloud-sdk/path.bash.inc
   - gcloud components update kubectl
   - gcloud auth activate-service-account --key-file extended-cinema-334708-27bc23b30efe.json
-  - gcloud config set project steady-petal-307322
+  - gcloud config set project extended-cinema-334708
   - gcloud config set compute/zone us-central1-a
   - gcloud container clusters get-credentials kube-cluster
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
