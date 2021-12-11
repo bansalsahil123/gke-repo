@@ -15,6 +15,7 @@ spec:
         paths:
           - path: /?(.*)
             # UPDATE PATH
+            pathType: Prefix
             
             # ADD PATHTYPE
             backend:
@@ -25,6 +26,7 @@ spec:
                   number: 3000
           - path: /api/?(.*)
             # UPDATE PATH
+            pathType: Prefix
             
             # ADD PATHTYPE
             backend:
