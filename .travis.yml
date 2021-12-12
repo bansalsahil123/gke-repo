@@ -13,7 +13,7 @@ before_install:
   - gcloud auth activate-service-account --key-file extended-cinema-334708-27bc23b30efe.json
   - gcloud config set project extended-cinema-334708
   - gcloud config set compute/zone us-central1-a
-  - gcloud container clusters get-credentials kube-cluster
+  - gcloud container clusters get-credentials k8s-cluster
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t 9896574744/react-test -f ./client/Dockerfile.dev ./client
 
